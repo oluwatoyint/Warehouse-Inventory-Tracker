@@ -5,7 +5,7 @@ CREATE DATABASE inventory_db;
 \c inventory_db;
 
 -- Create a dedicated user (optional but recommended for security)
-CREATE USER postgres WITH PASSWORD 'Laulatu2?';
+CREATE USER username WITH PASSWORD 'secretpassword';
 GRANT ALL PRIVILEGES ON DATABASE inventory_db TO postgres;
 
 -- Create items table
