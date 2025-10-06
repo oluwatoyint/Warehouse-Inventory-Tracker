@@ -3,8 +3,8 @@ services:
   db:
     image: postgres:13
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: Laulatu2?
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: secretpassword
       POSTGRES_DB: inventory_db
     ports:
       - "5432:5432"
@@ -22,7 +22,7 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - DATABASE_URL=postgresql://postgres:Laulatu2?@db:5432/inventory_db
+      - DATABASE_URL=postgresql://username:secretpassword@db:5432/inventory_db
       - FLASK_ENV=development
     depends_on:
       db:
