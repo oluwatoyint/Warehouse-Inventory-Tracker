@@ -6,10 +6,15 @@ A web application to track warehouse inventory in real-time, built with **Python
 - Add, view, update, and delete inventory items.
 - Real-time inventory tracking for warehouse and office use.
 - Responsive UI with clean code.
+  
 
-## Setup
+
 1. **Backend**:
-   - Install Python 3.8+ and PostgreSQL.
+   - Install Python 3.13, PostgreSQL 18, Git 2.5, node.js 22, Docker Desktop installer
+   - In Git Bash create a folder warehouse-inventory-tracker
+     ```git
+      mkdir warehouse-inventory-tracker
+      ```
    - Create a virtual environment: `python -m venv venv`
    - Install dependencies: `pip install -r backend/requirements.txt`
    - Set up `.env` with `DATABASE_URL=postgresql://username:password@localhost:5432/inventory_db`
